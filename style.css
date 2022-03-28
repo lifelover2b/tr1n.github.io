@@ -1,0 +1,182 @@
+.body {
+    height: 100vh;
+    font-weight: 400;
+}
+
+.container {  display: grid;
+    grid-template-columns: 0.2fr 1.6fr 1.2fr;
+    grid-template-rows: 0.4fr 2.0fr 0.4fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo name lang"
+      ". main services"
+      ". contacts contact-links";
+    background: #e6f2f0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #494949;
+    height: 100vh;
+  }
+  
+  .logo { 
+      grid-area: logo;
+      color: #34d186;
+      font-size: 45px;
+      font-weight: 700;
+      justify-self: end;
+      align-self: center;
+      padding-right: 10px;
+    }
+  
+  .name { 
+      grid-area: name;
+      font-size: 45px;
+      font-weight: 700;
+      align-self: center;
+    }
+  
+  .lang { 
+      grid-area: lang;
+      justify-self: end;
+      align-self: center;
+      margin-right: 40px;
+    }
+
+.lang a {
+    color: #494949;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.active {
+    font-weight: 700;
+}
+  
+  .main {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.2fr 0.8fr 0.7fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "slogan"
+      "description"
+      "concept";
+    grid-area: main;
+  }
+
+  .decor {
+      position: absolute;
+      top: 0px;
+      right: 40px;
+      height: 90%;
+  }
+  
+  .slogan { 
+      grid-area: slogan;
+      color: #089e87;
+      font-size: 30px;
+      font-weight: 700;
+      position: relative;
+    }
+
+h1 {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+  
+  .description { 
+      grid-area: description;
+      font-size: 25px;
+      font-weight: 400;
+ }
+  
+  .concept { 
+      grid-area: concept;
+      font-size: 30px;
+     }
+
+  .concept ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .contacts { 
+      grid-area: contacts;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas: "address email tel";
+      justify-items: stretch;
+      font-size: 20px;
+    }
+
+    .contacts a {
+        color:#494949;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .address {
+        grid-area: address;
+    }
+
+    .email {
+        grid-area: email;
+    }
+
+    .tel {
+        grid-area: tel;
+    }
+  
+    .contact-links {
+        grid-area: contact-links; 
+        align-self: center;
+        margin-right: 40px;
+
+      }
+
+    .contact-link {
+        float: right;
+        margin-left: 20px;
+    }
+      .telegram { grid-area: telegram; }
+      .linkedin { grid-area: linkedin; }
+  
+  .services {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "security hardware"
+      "components platform";
+    grid-area: services;
+    margin-right: 20px;
+  }
+
+  .infoblock {
+      background: #fff;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      padding: 20px;
+      font-size: 20px;
+  }
+
+  .infoblock h3 {
+      font-size: 35px;
+      margin: 0;
+  }
+  
+  .security { grid-area: security; }
+  
+  .hardware { grid-area: hardware; }
+  
+  .components { grid-area: components; }
+  
+  .platform { grid-area: platform; }
+  
+  .green {
+    color: #34d186;
+  }
