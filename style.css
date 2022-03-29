@@ -304,11 +304,11 @@ h1 {
     }
 
     .slogan_text {
-      font-size: 18px;
+      font-size: 16px;
     }
 
     .description {
-      font-size: 16px;
+      font-size: 15px;
     }
 
     .main {  
@@ -342,4 +342,51 @@ h1 {
     .infoblock h3 {
       font-size: 18px;
     }
+  }
+
+  @media screen and (max-width:400px) {
+    .container {
+      padding-left: 10px;
+      grid-template-columns: 0.2fr 1.5fr 0.8fr;
+    }
+
+    .logo { 
+      font-size: 30px;
+    }
+
+    .name {
+      font-size: 30px;
+    }
+
+    .slogan_text {
+      font-size: 13px;
+    }
+
+    .description h2 {
+      margin: 0;
+      font-size: 13px;
+    }
+
+    .concept {
+      font-size: 12px;
+    }
+
+    .infoblock {
+      font-size: 12px;
+    }
+
+    .infoblock h3 {
+      font-size: 14px;
+    }
+
+    .lang a {
+      font-size: 14px;
+      margin-left: 0;
+    }
+
+    .contacts {
+      font-size: 11px;
+    }
+
+
   }
