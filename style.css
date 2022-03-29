@@ -264,7 +264,9 @@ h1 {
 
     .contact-links {margin-right: 20px;}
 
-    .slogan_decor {display: block;}
+    .slogan_decor {
+      justify-self: auto;
+    }
 
     .contacts {
       font-size: 14px;
@@ -278,5 +280,61 @@ h1 {
 
     .lang a {
       margin-left: 5px;
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    body, html {
+      height: auto;
+    }
+
+    .container {
+      height: auto;
+      grid-template-areas:
+      "logo name lang"
+      "main main main"
+      "services services services"
+      "contacts contacts contact-links";
+      padding-left: 20px;
+    }
+
+    .lang a {
+      font-size: 18px;
+      margin-left: 0;
+    }
+
+    .slogan_text {
+      font-size: 18px;
+    }
+
+    .description {
+      font-size: 16px;
+    }
+
+    .main {  
+      grid-template-rows: 1.2fr 0.7fr 0.6fr;
+      align-items: center;
+    }
+
+    .services {
+      gap: 2px 2px;
+    }
+
+    .infoblock {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+
+    .contact-links {
+      justify-items: flex-end;
+    }
+
+    .contact-link {
+      margin-left: 5px;
+      justify-self: center;
+    }
+
+    .contact-link img {
+      width: 60%;
     }
   }
