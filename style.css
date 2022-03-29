@@ -318,11 +318,13 @@ h1 {
 
     .services {
       gap: 2px 2px;
+      margin-right: 10px;
     }
 
     .infoblock {
       margin-right: 0;
       margin-bottom: 0;
+      font-size: 16px;
     }
 
     .contact-links {
@@ -336,5 +338,8 @@ h1 {
 
     .contact-link img {
       width: 60%;
+    }
+    .infoblock h3 {
+      font-size: 18px;
     }
   }
