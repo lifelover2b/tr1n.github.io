@@ -126,6 +126,10 @@ h1 {
       color: #878787;
      }
 
+  .concept_mobile {
+    display: none;
+  }
+
   .concept ul {
       list-style: none;
       margin: 0;
@@ -215,7 +219,9 @@ h1 {
   }
 
 
-  @media screen and (max-width:1920px) {
+
+
+  @media screen and (max-width:2700px) {
     .container {
       max-height: 1000px;
     }
@@ -362,9 +368,26 @@ h1 {
       "logo name lang lang"
       "main main main main"
       "services services services services"
+      "concept concept concept concept"
       "contacts contacts contacts contacts"
       "contact-links contact-links contact-links contact-links";
       padding-left: 20px;
+    }
+
+    .main {
+      grid-template-rows: 0.4fr 0.4fr;
+      align-items: center;
+      grid-template-areas:
+        "slogan"
+        "description";
+    }
+
+    .concept_mobile {
+      display: block;
+    }
+
+    .concept_desktop {
+      display: none;
     }
 
     .lang {
@@ -388,11 +411,6 @@ h1 {
     .concept ul {
       font-size: 20px;
       margin: 1em 0;
-    }
-
-    .main {  
-      grid-template-rows: 0.4fr 0.4fr 0.3fr;
-      align-items: center;
     }
 
     .services {
@@ -467,8 +485,8 @@ h1 {
       font-size: 13px;
     }
 
-    .concept {
-      font-size: 12px;
+    .concept ul {
+      font-size: 13px;
     }
 
     .infoblock {
