@@ -269,7 +269,7 @@ h1 {
     }
   }
 
-  @media screen and (max-width: 1366px) {
+  @media screen and (max-width: 1440px) {
     .logo { 
       font-size: 36px;
     }
@@ -278,8 +278,12 @@ h1 {
       font-size: 36px;
     }
 
-    .slogan_text {
-      font-size: 20px;
+    .lang a {
+      font-size: 30px;
+    }
+
+    .slogan h1 {
+      font-size: 48px;
     }
 
     .description {
@@ -287,11 +291,12 @@ h1 {
     }
 
     .description h2 {
+      font-size: 28px;
       margin: 0;
     }
 
-    .concept {
-      font-size: 18px;
+    .concept ul {
+      font-size: 28px;
     }
 
     .infoblock {
@@ -300,6 +305,10 @@ h1 {
 
     .infoblock h3 {
       font-size: 20px;
+    }
+
+    .contacts {
+      font-size: 13px;
     }
   }
 
