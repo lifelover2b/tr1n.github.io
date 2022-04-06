@@ -157,6 +157,7 @@ h1 {
 
     .address {
         grid-area: address;
+        display: none;
     }
 
     .email {
@@ -165,6 +166,7 @@ h1 {
 
     .tel {
         grid-area: tel;
+        display: none;
     }
   
     .contact-links {
